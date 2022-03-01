@@ -4,19 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/yellow_fun_april_fool_s_day_promotion_instagram_story__1_"
+    android:background="@drawable/yellow_fun_april_fool_s_day_promotion_instagram_story__3_"
     tools:context=".ChoixActivity">
-
-    <Button
-        android:id="@+id/retourChoix"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="retour"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.02"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonQuestionnaire"

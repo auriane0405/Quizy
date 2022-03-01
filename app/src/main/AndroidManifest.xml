@@ -10,7 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quizy">
         <activity
-            android:name=".MainActivity"
+            android:name=".JouerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QRCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreationQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChoixActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrincipalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

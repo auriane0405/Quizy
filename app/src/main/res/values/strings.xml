@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">Quizy</string>
     <string name="question">Votre question</string>
-    <string name="true_question">Réponse vraie</string>
+    <string name="true_question">Bonne Réponse</string>
     <string name="wrong_answer_1">Mauvaise Réponse 1</string>
     <string name="wrong_answer_2">Mauvaise Réponse 2</string>
+    <string name="start">Commencer</string>
+    <string name="create">Créer un Quiz</string>
+    <string name="play">Jouer à un Quiz</string>
+    <string name="back">Retour</string>
+    <string name="thank_you">Merci</string>
 </resources>

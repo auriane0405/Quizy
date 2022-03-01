@@ -7,4 +7,35 @@
     android:background="@drawable/yellow_fun_april_fool_s_day_promotion_instagram_story__1_"
     tools:context=".ChoixActivity">
 
+    <Button
+        android:id="@+id/retourChoix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="retour"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonQuestionnaire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Questionnaire"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <Button
+        android:id="@+id/buttonEmoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Emoji quiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonQuestionnaire" />
 </androidx.constraintlayout.widget.ConstraintLayout>

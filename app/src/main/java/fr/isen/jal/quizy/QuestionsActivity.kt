@@ -27,19 +27,27 @@ class QuestionsActivity : AppCompatActivity() {
             .add(R.id.fragmentContainerQuestions, questionsFragmentList[currentPosition]).commit()
 
         buttonPrecedent = findViewById(R.id.buttonPrecedent)
-        val IntentPrecedent: Intent = Intent(this, PrincipalActivity::class.java)
         buttonPrecedent.setOnClickListener {
-            startActivity(IntentPrecedent)
+            val fragment = questionsFragmentList[currentPosition]
+            questionList.add(fragment.getAnsweredQuestion())
+            currentPosition--
+            supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerQuestions,questionsFragmentList[currentPosition]).commit()
         }
+
         buttonSuivant = findViewById(R.id.buttonSuivant)
         buttonSuivant.setOnClickListener {
             val fragment = questionsFragmentList[currentPosition]
             questionList.add(fragment.getAnsweredQuestion())
-            //on récupère les réponses du frag
-            //questionReponses[0][currentPosition]=question
-            //on stoque dans notre liste de question
             currentPosition++
             supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerQuestions,questionsFragmentList[currentPosition]).commit()
+        }
+        if(currentPosition==9) {
+            buttonSuivant.setOnClickListener {
+                val IntentSuivant: Intent = Intent(this, EnregistreActivity::class.java)
+                buttonSuivant.setOnClickListener {
+                    startActivity(IntentSuivant)
+                }
+            }
         }
     }
 }

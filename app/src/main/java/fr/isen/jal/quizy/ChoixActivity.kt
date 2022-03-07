@@ -15,13 +15,13 @@ class ChoixActivity : AppCompatActivity() {
         setContentView(R.layout.activity_choix)
 
         buttonQuestionnaire = findViewById(R.id.buttonQuestionnaire)
-        val IntentQuestionnaire : Intent =  Intent(this,CreationQuizActivity::class.java)
+        val IntentQuestionnaire : Intent =  Intent(this,ExempleQuestionnaireActivity::class.java)
         buttonQuestionnaire.setOnClickListener {
             startActivity(IntentQuestionnaire)
         }
 
         buttonEmoji = findViewById(R.id.buttonEmoji)
-        val IntentEmoji : Intent =  Intent(this,CreationQuizActivity::class.java)
+        val IntentEmoji : Intent =  Intent(this,ExempleEmojiQuizActivity::class.java)
         buttonEmoji.setOnClickListener {
             startActivity(IntentEmoji)
         }

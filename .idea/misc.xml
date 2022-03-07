@@ -5,11 +5,13 @@
       <map>
         <entry key="..\:/Users/theii/AndroidStudioProjects/Quizy/app/src/main/res/layout/activity_choix.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/theii/AndroidStudioProjects/Quizy/app/src/main/res/layout/activity_creation_quiz.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/theii/AndroidStudioProjects/Quizy/app/src/main/res/layout/activity_exemple_emoji_quiz.xml" value="0.25" />
+        <entry key="..\:/Users/theii/AndroidStudioProjects/Quizy/app/src/main/res/layout/activity_exemple_questionnaire.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/theii/AndroidStudioProjects/Quizy/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/Users/theii/AndroidStudioProjects/Quizy/app/src/main/res/layout/activity_jouer.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/theii/AndroidStudioProjects/Quizy/app/src/main/res/layout/activity_principal.xml" value="0.13513513513513514" />
         <entry key="..\:/Users/theii/AndroidStudioProjects/Quizy/app/src/main/res/layout/activity_qrcode.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/theii/AndroidStudioProjects/Quizy/app/src/main/res/layout/question_cell.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/theii/AndroidStudioProjects/Quizy/app/src/main/res/layout/question_cell.xml" value="0.25" />
       </map>
     </option>
   </component>

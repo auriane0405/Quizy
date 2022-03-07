@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quizy">
         <activity
+            android:name=".ExempleEmojiQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExempleQuestionnaireActivity"
+            android:exported="false" />
+        <activity
             android:name=".JouerActivity"
             android:exported="false" />
         <activity

@@ -12,7 +12,7 @@ class ExempleEmojiQuizActivity : AppCompatActivity() {
         setContentView(R.layout.activity_exemple_emoji_quiz)
 
         buttonCommencerEmoji = findViewById(R.id.buttonCommencerEmoji)
-        val IntentCommencerEmoji : Intent =  Intent(this,PrincipalActivity::class.java)
+        val IntentCommencerEmoji : Intent =  Intent(this,QuestionsActivity::class.java)
         buttonCommencerEmoji.setOnClickListener {
             startActivity(IntentCommencerEmoji)
         }

@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.os.Parcel
 import android.os.Parcelable
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
 import com.google.android.material.textfield.TextInputLayout
@@ -18,7 +19,7 @@ import com.google.zxing.qrcode.QRCodeWriter
 class QRCodeActivity() : AppCompatActivity() {
 
     private lateinit var ivQRcode: ImageView
-    private lateinit var NomQuest: TextInputLayout
+    private lateinit var NomQuest: EditText
     private lateinit var generatorQRcode: Button
 
 
@@ -33,7 +34,7 @@ class QRCodeActivity() : AppCompatActivity() {
         generatorQRcode = findViewById(R.id.generatorQRcode)
 
         generatorQRcode.setOnClickListener {
-            val data = NomQuest.editText.toString().trim()
+            val data = NomQuest.text.toString().trim()
 
             if (data.isEmpty()) {
                 Toast.makeText(this, "enter some data", Toast.LENGTH_SHORT).show()

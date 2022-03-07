@@ -25,6 +25,12 @@
             android:name=".PrincipalActivity"
             android:exported="false" />
         <activity
+            android:name=".ExempleQuestionnaireActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExempleEmojiQuizActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="true">
             <intent-filter>

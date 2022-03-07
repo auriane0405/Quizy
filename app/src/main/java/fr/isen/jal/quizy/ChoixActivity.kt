@@ -6,12 +6,10 @@ import android.os.Bundle
 import android.widget.Button
 
 class ChoixActivity : AppCompatActivity() {
-    //private lateinit var binding: ActivityChoixBinding
     lateinit var buttonQuestionnaire: Button
     lateinit var buttonEmoji: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //binding = ActivityPrincipalBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_choix)
 
         buttonQuestionnaire = findViewById(R.id.buttonQuestionnaire)

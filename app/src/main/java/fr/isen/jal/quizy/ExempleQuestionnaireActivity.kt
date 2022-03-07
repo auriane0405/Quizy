@@ -12,7 +12,7 @@ class ExempleQuestionnaireActivity : AppCompatActivity() {
         setContentView(R.layout.activity_exemple_questionnaire)
 
         buttonCommencerQuestionnaire = findViewById(R.id.buttonCommencerQuestionnaire)
-        val IntentCommencerQuestionnaire : Intent =  Intent(this,QuestionsActivity::class.java) //a modifier
+        val IntentCommencerQuestionnaire : Intent =  Intent(this,PrincipalActivity::class.java)
         buttonCommencerQuestionnaire.setOnClickListener {
             startActivity(IntentCommencerQuestionnaire)
         }

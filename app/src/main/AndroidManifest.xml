@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="fr.isen.jal.quizy">
+    package="fr.isen.jal.quizy" >
 
     <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Quizy">
+        android:theme="@style/Theme.Quizy" >
+        <activity
+            android:name=".QuestionsActivity"
+            android:exported="false" />
         <activity
             android:name=".JouerActivity"
             android:exported="false" />
@@ -17,15 +21,11 @@
             android:name=".QRCodeActivity"
             android:exported="false" />
         <activity
-            android:name=".CreationQuizActivity"
-            android:exported="false" />
-        <activity
             android:name=".ChoixActivity"
             android:exported="false" />
         <activity
             android:name=".PrincipalActivity"
             android:exported="false" />
-
         <activity
             android:name=".ExempleQuestionnaireActivity"
             android:exported="false" />
@@ -33,11 +33,8 @@
             android:name=".ExempleEmojiQuizActivity"
             android:exported="false" />
         <activity
-            android:name=".QuestionsActivity"
-            android:exported="false" />
-        <activity
             android:name=".HomeActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

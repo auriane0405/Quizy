@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "fr.isen.jal.quizy"
-        minSdk 22
+        minSdk 24
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -30,6 +30,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -44,6 +47,10 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation "com.journeyapps:zxing-android-embedded:4.2.0"
+<<<<<<< HEAD
     implementation 'com.google.zxing:core:3.2.0'
     
+=======
+    implementation "com.google.code.gson:gson:2.8.9"
+>>>>>>> fe712f8498604502833f09ad83d74c00fcc34bc1
 }

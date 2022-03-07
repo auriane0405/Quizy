@@ -36,13 +36,15 @@ class QuestionsActivity : AppCompatActivity() {
 
         buttonSuivant = findViewById(R.id.buttonSuivant)
         buttonSuivant.setOnClickListener {
-            val fragment = questionsFragmentList[currentPosition]
-            questionList.add(fragment.getAnsweredQuestion())
-            currentPosition++
-            supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerQuestions,questionsFragmentList[currentPosition]).commit()
-        }
-        if(currentPosition==9) {
-            buttonSuivant.setOnClickListener {
+            if(currentPosition<9) {
+                val fragment = questionsFragmentList[currentPosition]
+                questionList.add(fragment.getAnsweredQuestion())
+                currentPosition++
+                supportFragmentManager.beginTransaction().replace(
+                    R.id.fragmentContainerQuestions,
+                    questionsFragmentList[currentPosition]
+                ).commit()
+            } else {
                 val IntentSuivant: Intent = Intent(this, EnregistreActivity::class.java)
                 buttonSuivant.setOnClickListener {
                     startActivity(IntentSuivant)

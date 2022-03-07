@@ -34,8 +34,7 @@
             android:name=".ScanActivity"
             android:banner="@drawable/app_icon_your_company"
             android:icon="@drawable/app_icon_your_company"
-            android:label="@string/title_activity_scan"
-            android:logo="@drawable/app_icon_your_company"></activity>
+            android:logo="@drawable/app_icon_your_company"/>
         <activity
             android:name=".QRCodeActivity"
             android:exported="false" />

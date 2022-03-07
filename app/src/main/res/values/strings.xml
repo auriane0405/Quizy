@@ -11,4 +11,6 @@
     <string name="thank_you">Merci</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="NomQuest">Entrer le nom de votre questionnaire</string>
+    <string name="generatorQRcode">Générer votre QR code</string>
 </resources>

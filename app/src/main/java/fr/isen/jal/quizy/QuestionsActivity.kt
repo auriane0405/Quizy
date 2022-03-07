@@ -19,6 +19,7 @@ class QuestionsActivity : AppCompatActivity() {
         binding = ActivityQuestionsBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val questionsFragmentList = arrayListOf<QuestionsFragment>()
+        val questionList = arrayListOf<Question>()
         repeat(nombreQuestion) {
             questionsFragmentList.add(QuestionsFragment())
         }
@@ -33,7 +34,9 @@ class QuestionsActivity : AppCompatActivity() {
         buttonSuivant = findViewById(R.id.buttonSuivant)
         buttonSuivant.setOnClickListener {
             val fragment = questionsFragmentList[currentPosition]
+            questionList.add(fragment.getAnsweredQuestion())
             //on récupère les réponses du frag
+            //questionReponses[0][currentPosition]=question
             //on stoque dans notre liste de question
             currentPosition++
             supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerQuestions,questionsFragmentList[currentPosition]).commit()

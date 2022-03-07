@@ -17,9 +17,6 @@
             android:name=".QRCodeActivity"
             android:exported="false" />
         <activity
-            android:name=".CreationQuizActivity"
-            android:exported="false" />
-        <activity
             android:name=".ChoixActivity"
             android:exported="false" />
         <activity

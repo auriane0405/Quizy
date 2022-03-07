@@ -15,6 +15,7 @@
     <string name="NomQuest">Entrer le nom de votre questionnaire</string>
     <string name="generatorQRcode">Générer votre QR code</string>
 
+<<<<<<< HEAD
     <string name="question">Votre question</string>
     <string name="true_question">Bonne Réponse</string>
     <string name="wrong_answer_1">Mauvaise Réponse 1</string>
@@ -22,4 +23,6 @@
 
 
 
+=======
+>>>>>>> 4dcfe9478e58c4620c96fd79c234e6118941c280
 </resources>

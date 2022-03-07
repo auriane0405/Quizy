@@ -28,7 +28,7 @@ class PrincipalActivity : AppCompatActivity() {
         }
 
         buttonJouer = findViewById(R.id.buttonJouer)
-        val IntentJouer : Intent =  Intent(this,JouerActivity::class.java)
+        val IntentJouer : Intent =  Intent(this,ScanActivity::class.java)
         buttonJouer.setOnClickListener {
             startActivity(IntentJouer)
         }

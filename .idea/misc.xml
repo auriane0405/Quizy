@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/nexbo/Documents/GitHub/Quizy/app/src/main/res/layout/fragment_questions.xml" value="0.22" />
         <entry key="..\:/Users/theii/AndroidStudioProjects/Quizy/app/src/main/res/layout/activity_choix.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/theii/AndroidStudioProjects/Quizy/app/src/main/res/layout/activity_creation_quiz.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/theii/AndroidStudioProjects/Quizy/app/src/main/res/layout/activity_exemple_emoji_quiz.xml" value="0.25" />

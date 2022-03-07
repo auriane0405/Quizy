@@ -36,9 +36,10 @@
                 android:layout_marginEnd="24dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/question"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="hint" />
+                    android:hint="@string/question" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -49,9 +50,10 @@
                 android:layout_marginEnd="24dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/true_question"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="hint" />
+                    android:hint="@string/true_question" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -62,9 +64,10 @@
                 android:layout_marginEnd="24dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/wrong_answer_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="hint" />
+                    android:hint="@string/wrong_answer_1" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -75,9 +78,10 @@
                 android:layout_marginEnd="24dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/wrong_answer_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="hint" />
+                    android:hint="@string/wrong_answer_2" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
     </ScrollView>

@@ -13,7 +13,7 @@ class HomeActivity : AppCompatActivity() {
         //binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_home)
 
-        buttonCommencer = findViewById(R.id.buttonCommencer)
+        buttonCommencer = findViewById(R.id.buttonCommencerQuestionnaire)
         val IntentCommencer : Intent =  Intent(this,PrincipalActivity::class.java)
         buttonCommencer.setOnClickListener {
             startActivity(IntentCommencer)

@@ -22,7 +22,7 @@ class PrincipalActivity : AppCompatActivity() {
         }
 
         buttonCreer = findViewById(R.id.buttonCreer)
-        val IntentCreer : Intent =  Intent(this,ChoixActivity::class.java)
+        val IntentCreer : Intent =  Intent(this,ExempleQuestionnaireActivity::class.java)
         buttonCreer.setOnClickListener {
             startActivity(IntentCreer)
         }

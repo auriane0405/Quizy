@@ -22,6 +22,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quizy">
         <activity
+            android:name=".EnregistreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionsActivity"
+            android:exported="false" />
+        <activity
             android:name=".JouerActivity"
             android:exported="false" />
         <activity
@@ -34,12 +40,6 @@
             android:name=".QRCodeActivity"
             android:exported="false" />
         <activity
-            android:name=".CreationQuizActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ChoixActivity"
-            android:exported="false" />
-        <activity
             android:name=".PrincipalActivity"
             android:exported="false" />
         <activity
@@ -47,9 +47,6 @@
             android:exported="false" />
         <activity
             android:name=".ExempleEmojiQuizActivity"
-            android:exported="false" />
-        <activity
-            android:name=".QuestionsActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"

@@ -13,9 +13,13 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="112dp"
         android:layout_marginEnd="32dp"
+<<<<<<< HEAD:app/src/main/res/layout/question_cell.xml
+        app:boxBackgroundColor="@color/white"
+=======
         android:layout_marginBottom="112dp"
         android:layout_weight="1"
         android:background="@drawable/grey_rounded_corner"
+>>>>>>> 9a6a9b5b53f73f2574eb463b05c99bd77e1839fc:app/src/main/res/layout/activity_questions.xml
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -7,13 +7,12 @@
     <string name="thank_you">Merci</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-<<<<<<< HEAD
     <string name="NomQuest">Entrer le nom de votre questionnaire</string>
     <string name="generatorQRcode">Générer votre QR code</string>
-=======
+
     <string name="question">Votre question</string>
     <string name="true_question">Bonne Réponse</string>
     <string name="wrong_answer_1">Mauvaise Réponse 1</string>
     <string name="wrong_answer_2">Mauvaise Réponse 2</string>
->>>>>>> fe712f8498604502833f09ad83d74c00fcc34bc1
+
 </resources>

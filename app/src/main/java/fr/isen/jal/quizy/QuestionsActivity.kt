@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import fr.isen.jal.quizy.databinding.ActivityQuestionsBinding
 
 
@@ -11,7 +12,7 @@ class QuestionsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityQuestionsBinding
     lateinit var buttonPrecedent: Button
     lateinit var buttonSuivant: Button
-    private var nombreQuestion = 10
+    private var nombreQuestion = 2
     private var currentPosition = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,7 +37,7 @@ class QuestionsActivity : AppCompatActivity() {
         if(verifieInformation(question, true_question, wrong_answer_1, wrong_answer_2)) {
             buttonSuivant = findViewById(R.id.buttonSuivant)
             buttonSuivant.setOnClickListener {
-                if(currentPosition<9) {
+                if (currentPosition < nombreQuestion - 1) {
                     val fragment = questionsFragmentList[currentPosition]
                     questionList.add(fragment.getAnsweredQuestion())
                     currentPosition++
@@ -45,13 +46,17 @@ class QuestionsActivity : AppCompatActivity() {
                         questionsFragmentList[currentPosition]
                     ).commit()
                 } else {
-                    val IntentSuivant: Intent = Intent(this, EnregistreActivity::class.java)
+                    val intentSuivant: Intent = Intent(this, EnregistreActivity::class.java)
+                    intentSuivant.putExtra("questionsList", questionList)
                     buttonSuivant.setOnClickListener {
-                        startActivity(IntentSuivant)
+                        startActivity(intentSuivant)
                     }
                 }
             }
+        } else {
+            Toast(this, "ca marche pas")
         }
+
     }
     private fun verifieInformation( question: String?,
                                      true_question: String?,

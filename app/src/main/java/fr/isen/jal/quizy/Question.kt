@@ -1,3 +1,5 @@
 package fr.isen.jal.quizy
 
-data class Question(val titre: String,val reponses: ArrayList<String>)
+import java.io.Serializable
+
+data class Question(val titre: String,val reponses: ArrayList<String>): Serializable

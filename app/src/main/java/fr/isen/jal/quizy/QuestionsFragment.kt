@@ -25,9 +25,10 @@ class QuestionsFragment : Fragment() {
     fun getAnsweredQuestion(): Question {
         val question = Question(
             titre = binding.question.text.toString(),
-            reponses = arrayListOf(binding.trueQuestion.text.toString(), binding.wrongAnswer1.text.toString(), binding.wrongAnswer2.text.toString(),)
+            reponses = arrayListOf(binding.trueQuestion.text.toString(),
+                binding.wrongAnswer1.text.toString(), binding.wrongAnswer2.text.toString(),)
         )
         return question
-
     }
+
 }

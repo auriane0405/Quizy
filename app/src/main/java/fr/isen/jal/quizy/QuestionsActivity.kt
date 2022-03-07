@@ -33,23 +33,34 @@ class QuestionsActivity : AppCompatActivity() {
             currentPosition--
             supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerQuestions,questionsFragmentList[currentPosition]).commit()
         }
-
-        buttonSuivant = findViewById(R.id.buttonSuivant)
-        buttonSuivant.setOnClickListener {
-            if(currentPosition<9) {
-                val fragment = questionsFragmentList[currentPosition]
-                questionList.add(fragment.getAnsweredQuestion())
-                currentPosition++
-                supportFragmentManager.beginTransaction().replace(
-                    R.id.fragmentContainerQuestions,
-                    questionsFragmentList[currentPosition]
-                ).commit()
-            } else {
-                val IntentSuivant: Intent = Intent(this, EnregistreActivity::class.java)
-                buttonSuivant.setOnClickListener {
-                    startActivity(IntentSuivant)
+        if(verifieInformation(question, true_question, wrong_answer_1, wrong_answer_2)) {
+            buttonSuivant = findViewById(R.id.buttonSuivant)
+            buttonSuivant.setOnClickListener {
+                if(currentPosition<9) {
+                    val fragment = questionsFragmentList[currentPosition]
+                    questionList.add(fragment.getAnsweredQuestion())
+                    currentPosition++
+                    supportFragmentManager.beginTransaction().replace(
+                        R.id.fragmentContainerQuestions,
+                        questionsFragmentList[currentPosition]
+                    ).commit()
+                } else {
+                    val IntentSuivant: Intent = Intent(this, EnregistreActivity::class.java)
+                    buttonSuivant.setOnClickListener {
+                        startActivity(IntentSuivant)
+                    }
                 }
             }
         }
+    }
+    private fun verifieInformation( question: String?,
+                                     true_question: String?,
+                                     wrong_answer_1: String?,
+                                     wrong_answer_2: String?):Boolean {
+        var verified = (question?.isNotEmpty() == true &&
+                true_question?.isNotEmpty() == true &&
+                wrong_answer_1?.isNotEmpty() == true &&
+                wrong_answer_2?.isNotEmpty() == true)
+        return verified
     }
 }

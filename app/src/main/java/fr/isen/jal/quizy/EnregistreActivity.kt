@@ -31,7 +31,7 @@ class EnregistreActivity: AppCompatActivity() {
         buttonEnregistrer.setOnClickListener {
             val database = Firebase.database
             val myRef = database.getReference("message")
-            myRef.setValue("Hello, World2!")
+            myRef.setValue("Hello, World!")
 
             val IntentEnregistrer : Intent =  Intent(this,QRCodeActivity::class.java)
             startActivity(IntentEnregistrer)

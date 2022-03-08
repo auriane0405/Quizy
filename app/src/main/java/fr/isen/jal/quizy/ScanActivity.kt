@@ -1,5 +1,6 @@
 package fr.isen.jal.quizy
 
+import android.content.Intent
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -39,8 +40,10 @@ class ScanActivity : AppCompatActivity() {
 
         // Callbacks
         codeScanner.decodeCallback = DecodeCallback {
+            val IntentJouer : Intent =  Intent(this,JouerActivity::class.java)
             runOnUiThread {
                 Toast.makeText(this, "Scan result: ${it.text}", Toast.LENGTH_LONG).show()
+                startActivity(IntentJouer)
             }
         }
         codeScanner.errorCallback = ErrorCallback { // or ErrorCallback.SUPPRESS

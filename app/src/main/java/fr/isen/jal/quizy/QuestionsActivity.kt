@@ -34,7 +34,7 @@ class QuestionsActivity : AppCompatActivity() {
             currentPosition--
             supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerQuestions,questionsFragmentList[currentPosition]).commit()
         }
-        if(verifieInformation(question, true_question, wrong_answer_1, wrong_answer_2)) {
+      //  if(verifieInformation(question, true_question, wrong_answer_1, wrong_answer_2)) {
             buttonSuivant = findViewById(R.id.buttonSuivant)
             buttonSuivant.setOnClickListener {
                 if (currentPosition < nombreQuestion - 1) {
@@ -53,9 +53,9 @@ class QuestionsActivity : AppCompatActivity() {
                     }
                 }
             }
-        } else {
-            Toast(this, "ca marche pas")
-        }
+      //  } else {
+        //    Toast(this, "ca marche pas")
+       // }
 
     }
     private fun verifieInformation( question: String?,

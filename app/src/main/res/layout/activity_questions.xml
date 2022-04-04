@@ -26,6 +26,22 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
 
+    <TextView
+        android:id="@+id/numberQuestion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/pink2"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSuivant"
+        app:layout_constraintStart_toEndOf="@+id/buttonPrecedent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentContainerQuestions" />
 
     <FrameLayout
         android:id="@+id/fragmentContainerQuestions"
@@ -36,7 +52,8 @@
         app:layout_constraintBottom_toTopOf="@+id/buttonPrecedent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
     </FrameLayout>
 

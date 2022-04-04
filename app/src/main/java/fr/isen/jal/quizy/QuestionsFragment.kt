@@ -31,4 +31,17 @@ class QuestionsFragment : Fragment() {
         return question
     }
 
+    fun verifieInformation(
+        question: String?,
+        true_question: String?,
+        wrong_answer_1: String?,
+        wrong_answer_2: String?
+    ):Boolean {
+        var verified = (question?.isNotEmpty() == true &&
+                true_question?.isNotEmpty() == true &&
+                wrong_answer_1?.isNotEmpty() == true &&
+                wrong_answer_2?.isNotEmpty() == true)
+        return verified
+    }
+
 }

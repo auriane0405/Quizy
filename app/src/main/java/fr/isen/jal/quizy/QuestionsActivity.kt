@@ -13,8 +13,10 @@ class QuestionsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityQuestionsBinding
     lateinit var buttonPrecedent: Button
     lateinit var buttonSuivant: Button
-    private var nombreQuestion = 2
+    private var nombreQuestion = 10
     private var currentPosition = 0
+
+    private var currentQuestionDisplay = 1;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +24,7 @@ class QuestionsActivity : AppCompatActivity() {
         setContentView(binding.root)
         val questionsFragmentList = arrayListOf<QuestionsFragment>()
         val questionList = arrayListOf<Question>()
+        binding.numberQuestion.text = currentQuestionDisplay.toString()
         repeat(nombreQuestion) {
             questionsFragmentList.add(QuestionsFragment())
         }
@@ -34,6 +37,11 @@ class QuestionsActivity : AppCompatActivity() {
             questionList.add(fragment.getAnsweredQuestion())
             currentPosition--
             supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerQuestions,questionsFragmentList[currentPosition]).commit()
+
+            currentQuestionDisplay--
+            binding.numberQuestion.text = currentQuestionDisplay.toInt().toString()
+
+
         }
       //  if(verifieInformation(question, true_question, wrong_answer_1, wrong_answer_2)) {
             buttonSuivant = findViewById(R.id.buttonSuivant)
@@ -46,6 +54,10 @@ class QuestionsActivity : AppCompatActivity() {
                         R.id.fragmentContainerQuestions,
                         questionsFragmentList[currentPosition]
                     ).commit()
+
+                    currentQuestionDisplay++
+                    binding.numberQuestion.text = currentQuestionDisplay.toString()
+
                 } else {
                     val intentSuivant: Intent = Intent(this, EnregistreActivity::class.java)
                     intentSuivant.putExtra("questionsList", questionList)

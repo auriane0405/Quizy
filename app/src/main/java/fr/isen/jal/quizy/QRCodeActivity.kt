@@ -1,5 +1,6 @@
 package fr.isen.jal.quizy
 
+import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Color
 import android.os.Build.VERSION_CODES.O
@@ -22,6 +23,7 @@ class QRCodeActivity() : AppCompatActivity() {
     private lateinit var ivQRcode: ImageView
     private lateinit var NomQuest: TextInputEditText
     private lateinit var generatorQRcode: Button
+    private lateinit var buttonRetourMenu: Button
 
 
 
@@ -33,6 +35,12 @@ class QRCodeActivity() : AppCompatActivity() {
         ivQRcode = findViewById(R.id.ivQRcode)
         NomQuest = findViewById(R.id.NomQuest)
         generatorQRcode = findViewById(R.id.generatorQRcode)
+
+        buttonRetourMenu = findViewById(R.id.buttonRetourMenu)
+        val IntentRetourMenu : Intent =  Intent(this,PrincipalActivity::class.java)
+        buttonRetourMenu.setOnClickListener {
+            startActivity(IntentRetourMenu)
+        }
 
         generatorQRcode.setOnClickListener {
             val data = NomQuest.text.toString().trim()

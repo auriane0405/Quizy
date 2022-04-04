@@ -8,7 +8,7 @@
     tools:context=".JouerActivity">
 
     <Button
-        android:id="@+id/valider"
+        android:id="@+id/buttonValider"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="72dp"
@@ -23,7 +23,7 @@
         android:name="fr.isen.jal.quizy.JouerFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/valider"
+        app:layout_constraintBottom_toTopOf="@+id/buttonValider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

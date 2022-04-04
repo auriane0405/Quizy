@@ -23,6 +23,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quizy">
         <activity
+            android:name=".ResultatsActivity"
+            android:exported="false" />
+        <activity
             android:name=".EnregistreActivity"
             android:exported="false" />
         <activity
@@ -35,7 +38,7 @@
             android:name=".ScanActivity"
             android:banner="@drawable/app_icon_your_company"
             android:icon="@drawable/app_icon_your_company"
-            android:logo="@drawable/app_icon_your_company"/>
+            android:logo="@drawable/app_icon_your_company" />
         <activity
             android:name=".QRCodeActivity"
             android:exported="false" />

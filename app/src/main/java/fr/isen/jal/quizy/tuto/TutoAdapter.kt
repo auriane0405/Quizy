@@ -26,10 +26,10 @@ class TutoAdapter(fm:FragmentManager) : FragmentPagerAdapter(fm) {
     override fun getPageTitle(position: Int): CharSequence? {
         when(position) {
             0 -> {
-                return "Tab 1"
+                return "Questions Classiques"
             }
             1 -> {
-                return "Tab 2"
+                return "Emoji Quizz"
             }
         }
         return super.getPageTitle(position)

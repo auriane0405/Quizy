@@ -18,7 +18,6 @@ class EnregistreActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_enregistre)
 
-
         val questionList = intent.getSerializableExtra("questionList")
 
         database= Firebase.database.reference
